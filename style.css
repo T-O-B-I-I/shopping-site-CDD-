@@ -9,14 +9,18 @@
   --text-color: #fff;
   --accent-color:#FEBD69;
   --navbar-color:#232F3E;
-  --big-font: 3rem;
-  --h2-font: 2.5rem;
-  --p-font: 1.5rem;
+  --big-font: min(3rem,12vw);
+  --h2-font: min(2.5rem,4vh);
+  --nav-font:2vh;
+  --p-font: min(1.5rem,2vh);
   --font: 'Poppins', sans-serif;
+  --bar-height:min(7rem,7vh);
+  --bar-border:min();
 }
 body{
   background-color:var(--bg-color);
   font-family: var(--font);
+  overflow-x:hidden;
 }
 h1{
   font-size:var(--big-font);
@@ -26,12 +30,6 @@ h2{
 }
 p{
   font-size: var(--p-font);
-}
-nav,div,.mainbar,.hamburger{
-  padding:1rem;
-  margin-left:0.5rem;
-  margin-right:0.5rem;
-  border-radius:1rem;
 }
 nav{
   width:auto;
@@ -49,15 +47,16 @@ header{
 /*navbar*/
 .heading{
   display:flex;
-  justify-content:space-between;
+  justify-content:center;
   align-items:center;
+  text-align:center;
   background-color:var(--accent-color);
-  height:4rem;
-  border-radius:1rem;
+  height:var(--bar-height);
+  border-radius:(--bar-border);
   font-size:var(--big-font);
   color: var(--text-color);
 }
-.sidebar{
+/* .sidebar{
   display:flex;
   background-color:var(--navbar-color);
   right:0;
@@ -68,20 +67,23 @@ header{
   border-radius:1rem;
   margin-right:1rem;
   margin-top:0;
-}
+} */
 .mainbar{
-  display:none;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-evenly;
+  align-items:center;
   background-color:var(--navbar-color);
-  padding:1rem;
+  height:var(--bar-height);
 }
-.hamburger{
+/* .hamburger{
   background-color:var(--navbar-color);
   color:var(--text-color);
   padding:0.5rem 1rem 0.5rem 1rem;
   border-radius: 1rem;
   margin-right:1rem;
   border-style:none;
-}
+} */
 nav a:hover{
   color:var(--accent-color);
   transition: 0.3s ease-in-out;
@@ -97,10 +99,10 @@ nav ul{
   display:flex;
   justify-content:center;
   align-items:center;
-  width:100%;
+  width:100vw;
 }
 .text{
-  margin-top:-5.5rem;
+  
 }
 .text h2{
   margin-top:-2rem;
@@ -129,6 +131,8 @@ nav ul{
  } 
 .box img{
   display: block;
+  height:auto;
+  width:min(20vh,24rem)
  }
 .price{
   bottom:0;
@@ -222,17 +226,15 @@ footer {
   .heading{
     justify-content:center;
   }
-  .hamburger{
+  /* .hamburger{
     display:none;
-  }
+  } */
+   /* .sidebar{
+    display:none;
+  } */
   .mainbar{
     display:flex;
-    flex-direction:row;
-    justify-content:space-evenly;
-    align-items:center;
-  }
-  .sidebar{
-    display:none;
+    
   }
   .container{
     display:flex;
