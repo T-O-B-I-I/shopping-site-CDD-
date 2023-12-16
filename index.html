@@ -1,293 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CDD</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Shopping Site</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-
 </head>
-
-<body>
-    
-        <section class="home" id="home">
-            
-                <div class="navbar">
-                    <a href="#"><h1>TECHOS</h1></a>
-                    <div class="nav-pannel ">
-                        <a href="#home">HOME</a>
-                        <a href="#shop">SHOP</a>
-                        <a href="#why-us">WHY US</a>
-                        <a href="#testimonial">TESTIMONAL</a>
-                        <a href="#contact">CONTACT US</a>
-                        <a href="#"><i class="fa-solid fa-user"></i> LOGIN</a>
-                        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-                    </div>
+    <body>
+        <header>
+            <div class="heading">
+                <a href="#home">Tech Shop</a>
+                <button class="hamburger" onclick="showSidebar()"><i class="fa-solid fa-bars"></i></button>
+            </div>
+            <nav>
+                <ul class="sidebar">
+                    <li><button onclick="hideSidebar()">X</button></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#why">Why Us ?</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="login.html"><i class="fa-solid fa-user"></i> Login</a></li>
+                    <li><a href="#search"><i class="fa-solid fa-magnifying-glass"></i> Search</a></li>
+                </ul>
+                <ul class="mainbar">
+                    <li><a href="#home">Home</a></li>|
+                    <li><a href="#shop">Shop</a></li>|
+                    <li><a href="#why">Why Us ?</a></li>|
+                    <li><a href="#contact">Contact Us</a></li>|
+                    <li><a href="#about">About Us</a></li>|
+                    <li><a href="login.html"><i class="fa-solid fa-user"></i> Login</a></li>|
+                    <li><a href="#search"><i class="fa-solid fa-magnifying-glass"></i> Search</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="home">
+            <div class="show">
+                <div class="text">
+                    <h1>Welcome To Our</h1>
+                    <h2>TechShop</h2>
+                    <p>ppppppppppppppppppp</p>
                 </div>
-
-                <!-- <div class="bg"><img src="image/template.jpg" alt=""></div> -->
-
-                <div class="first">
-                    <div class="show-head">
-                        <h1 class="h1"> WELCOME TO OUR                       TECHSHOP</h1>
-                    </div>
-                    <div class="show-para">
-                        <p>lorem10 Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Blanditiis cum impedit velit in laborum iste dolor
-                            provident nisi ullam sunt distinctio.</p>
-                        <button class="con-btn"><a>contact us</a></button>
-                    </div>
-
-                </div>
-
-
+                <!--This is for image -->
+                <div class="image"><a href="#shop"><img src="img/show.jpg" alt="desktop"></a></div>
+            </div>
         </section>
-    <section class="shop" id="shop">
-        <h1>shoping section</h1>
-        <div class="shop-section">
-            <div class=" box">
-                <div class="box-content">
-                    <h2>headphone</h2>
-                    <div class="box-img"><img src="/image/box1.jpg" alt=""></div>
-
+        <section class="shop">
+            <div class="heading"><h1>OUR LATEST PRODUCTS</h1></div>
+            <div class="container">
+                <div class="box">
+                    <h2>Speaker</h2>
+                    <img src="speaker.png" alt="speaker">
+                    <p class="price">Buy at only: <span>$1200</span></p>
+                </div>
+                <div class="box">
+                    <h2>Keyboard</h2>
+                    <img src="keyboard.png" alt="keyboard">
+                    <p class="price">Buy at only: <span>$1600</span></p>
+                </div>
+                <div class="box">
+                    <h2>Mouse</h2>
+                    <img src="mouse.png" alt="mouse">
+                    <p class="price">Buy at only: <span>$1500</span></p>
+                </div>
+                <div class="box">
+                    <h2>Router</h2>
+                    <img src="router.png" alt="router">
+                    <p class="price">Buy at only: <span>$2000</span></p>
+                </div>
+                <div class="box">
+                    <h2>RAM</h2>
+                    <img src="ram.png" alt="ram">
+                    <p class="price">Buy at only: <span>$2000</span></p>
+                </div>
+                <div class="box">
+                    <h2>CD</h2>
+                    <img src="cd.png" alt="cd">
+                    <p class="price">Buy at only: <span>$1000</span></p>
+                </div>
+                <div class="box">
+                    <h2>SSD</h2>
+                    <img src="ssd.png" alt="ssd">
+                    <p class="price">Buy at only: <span>$1000</span></p>
+                </div>
+                <div class="box">
+                    <h2>Camera</h2>
+                    <img src="camera.png" alt="camera">
+                    <p class="price">Buy at only: <span>$1000</span></p>
                 </div>
             </div>
-            <div class=" box">
-                <div class="box-content">
-                    <h2>keyboard</h2>
-                    <div class="box-img" ><img src=" image/key.jpg" alt=""></div>
-
-                </div>
-            </div>
-            <div class=" box">
-                <div class="box-content">
-                    <h2>computer</h2>
-                    <div class="box-img"><img src="image/box3.webp" alt=""></div>
-
-                </div>
-            </div>
-            <div class=" box">
-                <div class="box-content">
-                    <h2>speaker</h2>
-                    <div class="box-img"><img src="\image\box4.jpg" alt=""></div>
-
-                </div>
-            </div>
-
-            <div class=" box">
-                <div class="box-content">
-                    <h2>camera</h2>
-                    <div class="box-img"><img src=" image/box5.jpg" alt=""></div>
-
-                </div>
-            </div>
-            <div class=" box">
-                <div class="box-content">
-                    <h2>hard drive</h2>
-                    <div class="box-img"><img src="/image/box6.jpg" alt=""></div>
-
-                </div>
-            </div>
-            <div class=" box">
-                <div class="box-content">
-                    <h2>ssd</h2>
-                    <div class="box-img"><img src="/image/box7.jpg" alt=""></div>
-
-                </div>
-            </div>
-            <div class=" box">
-                <div class="box-content">
-                    <h2>mouse</h2>
-                    <div class="box-img"><img src="/image/box8.jpg" alt=""></div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section >
-        <div class=" arr-back">
-        <div class="arr-new">
-            <h1> BEST SAVINGS ON<br>NEW ARRIVALS </h1>
-
-            <p>Qui ex dolore at repellat, quia neque doloribus omnis adipisci, ipsum eos
-                odio
-                fugit ut eveniet blanditiis praesentium totam non nostrum dignissimos nihil eius facere et eaque.
-                Qui,
-                animi obcaecati.</p>
-            <div class="btn-div">
-                <button class="arr-button">buy
-                    now</button>
-                <button class="arr-button see-more">see more</button>
-            </div>
-            <br>
-            <div class="arr-img"></div>
-        </div>
-
-        </div>
-
-    </section>
-
-    <section class="why-us" id="why-us">
-        <h1 style="color: #fff;"> WHY SHOP WITH US</h1>
-        <div class="why-shop">
-            <div class="why-item">
-                <div class="delivary why-box"> <i class="fa fa-truck"></i><br>
-                    <h2>Fast Delivery</h2><br>
-                    <p>variations of passages of Lorem Ipsum available</p>
-                </div>
-                <div class="shiping why-box"><i class="fa-solid fa-cart-flatbed"></i><br>
-                    <h2>Free Shiping</h2>
-                    <br>
-                    <p>variations of passages of Lorem Ipsum available</p>
-                </div>
-
-                <div class="qualit why-box"><i class="fa-regular fa-hand-peace"></i><br>
-                    <h2>Best Quality</h2><br>
-                    <p>variations of passages of Lorem Ipsum available</p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-    <section>
-
-        <div class="gift">
-
-
-            <div class="gift-img">
-
-            </div>
-            <h1>GIFTS FOR YOUR <br>
-                LOVED ONES</h1>
-
-            <p>Omnis ex nam laudantium odit illum harum, excepturi accusamus at corrupti, velit blanditiis unde
-                perspiciatis, vitae minus culpa? Beatae at aut consequuntur porro adipisci aliquam eaque iste ducimus
-                expedita accusantium?</p>
-
-            <div class="gift-btn">
-                <button class="gift-buy"> buy now</button>
-                <button class="gift-see"> see more</button>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="contact" id="contact">
-        <div class="card">
-            <h2>Contact Us</h2>
-            <div class="row">
-              <div class="col">
-                <div class="form-group">
-                  <label>First Name</label>
-                  <input type="text">
-                </div>
+        </section>
+        <section class="why">
+        </section>
+        <section class="search">
+            <div class="search-container">
+                <h1>Search with your heart's content</h1>
+                <input type="text" class="search-input" placeholder="Enter your search query"><p><br></p>
+                <button class="search-button">Search</button>
               </div>
-          
-              <div class="col">
-                <div class="form-group">
-                  <label>Surname</label>
-                  <input type="text">
-                </div>
-              </div>
-          
-              <div class="col">
-                <div class="form-group">
-                  <label>Email</label>
-                  <input type="text">
-                </div>
-              </div>
-          
-              <div class="col">
-                <div class="form-group">
-                  <label>Phone</label>
-                  <input type="text">
-                </div>
-              </div>
-          
-              <div class="col">
-                <div class="form-group">
-                  <label>Message</label>
-                  <textarea></textarea>
-                </div>
-              </div>
-          
-              <div class="col">
-                <input type="submit" value="Submit">
-              </div>
+        </section>
+        <section class="contact">
+            <div class="contact-container">
+                <h1>Contact Us</h1>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <input type="submit" value="Submit">
+                </form>
             </div>
-          </div>
-    </section>
-
-    <footer>
-        <div class="foot-pannel1"> <a href="#home">Back to top</a></div>
-        <div class="foot-pannel2">
-            <ul>
-                <p>Get to Know Us</p>
-                <a> Careers</a>
-                <a> Blog</a>
-                <a> About techos</a>
-                <a> Investor Relations</a>
-                <a>techos Science</a>
-            </ul>
-
-            <ul>
-                <p>make moner with us</p>
-                <a> sell products on techos</a>
-                <a> sell on techos business</a>
-                <a> sell apps on techos</a>
-                <a> Becoms an affiliate</a>
-                <a>advantagement of your product</a>
-                <a>self publish with us</a>
-                <a>hot techos hub</a>
-            </ul>
-
-            <ul>
-                <p>contact us</p>
-                <a><i class="fa-brands fa-instagram insta"></i> official-techos</a>
-                <a><i class="fa-brands fa-facebook facebook"></i> offical-techos</a>
-                <a><i class="fa-brands fa-twitter twiter"></i> ofical-techos page</a>
-                <a><i class="fa-brands fa-youtube youtube"></i> techos official</a>
-            </ul>
-
-            <ul>
-                <p>let us help you</p>
-                <a> COVID-19</a>
-                <a>your account</a>
-                <a> your ship</a>
-                <a> your order</a>
-                <a>return & replacement</a>
-                <a>manage your content and device</a>
-                <a>techos assisistant</a>
-                <a>help</a>
-            </ul>
-
-
-        </div>
-        <div class="foot-pannel3">
-            <div class="logo"><a>TECHOS</a>
-
+        </section>
+        <footer>
+            <div class="column">
+                <h3>Column 1</h3>
+                <ul>
+                    <li>Link 1</li>
+                    <li>Link 2</li>
+                    <li>Link 3</li>
+                </ul>
             </div>
-        </div>
-        <div class="foot-pannel4">
-            <div class="pages">
-                <a>condition of use</a>
-                <a> Privacy notice</a>
-                <a>Your Ads Privacy choices</a>
+            <div class="column">
+                <h3>Column 2</h3>
+                <ul><li>Link 4</li>
+                    <li>Link 5</li>
+                    <li>Link 6</li>
+                </ul>
             </div>
-            <div class="copy-right">© 2023 All Rights Reserved. By HTML Design
-
+            <div class="column">
+                <h3>Column 3</h3>
+                <ul>
+                    <li>Link 7</li>
+                    <li>Link 8</li>
+                    <li>Link 9</li>
+                </ul>
             </div>
-        </div>
-    </footer>
-
-</body>
-
+        </footer>
+        <script>
+        </script>
+    </body>
 </html>
