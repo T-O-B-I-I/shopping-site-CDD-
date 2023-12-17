@@ -1,22 +1,38 @@
+/*-------------------------------------------*\
+              Universal Selectors
+\*-------------------------------------------*/
+
 * *::after *::before{
   margin: 0;
   padding: 0;
-  scroll-behavior:smooth;
-  box-sizing:border-box;
+  scroll-behavior:smooth; /* This adds smooth scrolling */
+  box-sizing:border-box; /* No interference in size */
 }
+
+/*-------------------------------------------*\
+                Css Variables
+\*-------------------------------------------*/
+
 :root{
+/* ====--[Colour Variables]--==== */
   --bg-color: #E3E6E6;
   --text-color: #fff;
   --accent-color:#FEBD69;
   --navbar-color:#232F3E;
+
+/* ====--[Font Variables]--==== */
   --big-font: min(3rem,12vw);
   --h2-font: min(2.5rem,4vh);
   --nav-font:2vh;
   --p-font: min(1.5rem,2vh);
   --font: 'Poppins', sans-serif;
+
+/* ====--[Heading Bar Variables]--==== */
   --bar-height:min(7rem,7vh);
-  --bar-border:min();
+  --border-radius:min(3vh,1rem);
 }
+
+/* ========----[[Element Selectors]]----======== */
 body{
   background-color:var(--bg-color);
   font-family: var(--font);
@@ -44,7 +60,12 @@ ul{
 header{
   height:auto;
 }
-/*navbar*/
+
+/*-------------------------------------------*\
+                  Navigation
+\*-------------------------------------------*/
+
+/* ========----[[Heading]]----======== */
 .heading{
   display:flex;
   justify-content:center;
@@ -52,10 +73,11 @@ header{
   text-align:center;
   background-color:var(--accent-color);
   height:var(--bar-height);
-  border-radius:(--bar-border);
+  border-radius:(--border-radius);
   font-size:var(--big-font);
   color: var(--text-color);
 }
+
 /* .sidebar{
   display:flex;
   background-color:var(--navbar-color);
@@ -68,6 +90,8 @@ header{
   margin-right:1rem;
   margin-top:0;
 } */
+
+/* ========----[[Navbar]]----======== */
 .mainbar{
   display:flex;
   flex-direction:row;
@@ -76,6 +100,7 @@ header{
   background-color:var(--navbar-color);
   height:var(--bar-height);
 }
+
 /* .hamburger{
   background-color:var(--navbar-color);
   color:var(--text-color);
@@ -84,25 +109,36 @@ header{
   margin-right:1rem;
   border-style:none;
 } */
+
+/* ========----[[Navbar Items]]----======== */
 nav a:hover{
   color:var(--accent-color);
   transition: 0.3s ease-in-out;
 }
+
+/* ========----[[Navbar Menu]]----======== */
 nav ul{
   display:flex;
   flex-direction:column;
   justify-content:space-around;
   align-content:center;
 }
-/*home*/
+
+/*-------------------------------------------*\
+                     Home
+\*-------------------------------------------*/
+
+/* ========----[[Home Container]]----======== */
 .home{
   display:flex;
   justify-content:center;
   align-items:center;
   width:100vw;
 }
+
+/* ========----[[Main text]]----======== */
 .text{
-  
+  margin-top:-1.5rem;
 }
 .text h2{
   margin-top:-2rem;
@@ -110,13 +146,19 @@ nav ul{
 .text p{
   margin-top:-2rem;
 }
+
+/* ========----[[Main Image]]----======== */
 .image img{
-  margin-top:-2.5rem;
-  width:20rem;
+  width:min(70vw,20rem);
   height:auto;
   border-radius:1rem;
 }
-/*shop*/
+
+/*-------------------------------------------*\
+                     Shop
+\*-------------------------------------------*/
+
+/* ========----[[Shop Container]]----======== */
 .container{
   height:auto;
   text-align: center;
@@ -132,7 +174,7 @@ nav ul{
 .box img{
   display: block;
   height:auto;
-  width:min(20vh,24rem)
+  width:min(20vh,24rem);
  }
 .price{
   bottom:0;
@@ -140,7 +182,10 @@ nav ul{
 .shop span{
   color: green;
 }
-/*search*/
+
+/*-------------------------------------------*\
+                    Search
+\*-------------------------------------------*/
 .search-container {
   text-align: center;
   margin-top: 100px;
@@ -167,7 +212,11 @@ nav ul{
   border-width:0.1rem;
   transition: 0.3s ease-in;
 }
-/*contact*/
+
+/*-------------------------------------------*\
+                    Contacts
+\*-------------------------------------------*/
+
 .contact-container {
   text-align:center;
   margin: 1rem;
