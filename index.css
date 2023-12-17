@@ -29,7 +29,7 @@
   
 /* ====--[Heading Bar Variables]--==== */
     --bar-height:min(7rem,7vh);
-    --bar-width:100%;
+    --bar-width:100vw;
     --border-radius:min(3vh,1rem);
 
 /* ====--[Shoping Box Variables]--==== */

@@ -37,15 +37,14 @@
 } */
 
 /* ========----[[Navbar]]----======== */
-.mainbar{
+.nav-menu{
   display:flex;
-  flex-direction:row;
-  justify-content:space-around;
+  justify-content:space-evenly;
   align-items:center;
   width:var(--bar-width);
   background-color:var(--navbar-color);
   height:var(--bar-height);
-  border-radius:var(--border-radius)
+  border-radius:var(--border-radius);
 }
 
 /* .hamburger{
@@ -62,12 +61,6 @@ nav a:hover{
   color:var(--accent-color);
   transition: 0.3s ease-in-out;
 }
-
-/* ========----[[Navbar Menu]]----======== */
-nav ul{
-  
-}
-
 /*-------------------------------------------*\
                      Home
 \*-------------------------------------------*/
