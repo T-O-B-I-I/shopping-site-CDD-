@@ -9,30 +9,35 @@
     box-sizing:border-box; /* No interference in size */
   }
   
-  /*-------------------------------------------*\
+/*-------------------------------------------*\
                   Css Variables
-  \*-------------------------------------------*/
+\*-------------------------------------------*/
   
   :root{
-  /* ====--[Colour Variables]--==== */
+/* ====--[Colour Variables]--==== */
     --bg-color: #E3E6E6;
     --text-color: #fff;
     --accent-color:#FEBD69;
     --navbar-color:#232F3E;
   
-  /* ====--[Font Variables]--==== */
+/* ====--[Font Variables]--==== */
     --big-font: min(3rem,12vw);
     --h2-font: min(2.5rem,4vh);
-    --nav-font:2vh;
+    --nav-font:min(2vh,2.5rem);
     --p-font: min(1.5rem,2vh);
     --font: 'Poppins', sans-serif;
   
-  /* ====--[Heading Bar Variables]--==== */
+/* ====--[Heading Bar Variables]--==== */
     --bar-height:min(7rem,7vh);
+    --bar-width:100%;
     --border-radius:min(3vh,1rem);
+
+/* ====--[Shoping Box Variables]--==== */
+    --box-height:36vh;
+    --color-box:rgba(255,255,255,2.3);
   }
   
-  /* ========----[[Element Selectors]]----======== */
+/* ========----[[Element Selectors]]----======== */
   body{
     background-color:var(--bg-color);
     font-family: var(--font);
