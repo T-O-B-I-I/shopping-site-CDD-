@@ -10,18 +10,7 @@
 \*-------------------------------------------*/
 
 /* ========----[[Heading]]----======== */
-.heading{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-  background-color:var(--accent-color);
-  height:var(--bar-height);
-  border-radius:var(--border-radius);
-  font-size:var(--big-font);
-  color: var(--text-color);
-  width:var(--bar-width);
-}
+
 
 /* .sidebar{
   display:flex;
@@ -37,7 +26,8 @@
 } */
 
 /* ========----[[Navbar]]----======== */
-.mainbar{
+
+/* .mainbar{
   display:flex;
   flex-direction:row;
   justify-content:space-around;
@@ -46,7 +36,7 @@
   background-color:var(--navbar-color);
   height:var(--bar-height);
   border-radius:var(--border-radius)
-}
+} */
 
 /* .hamburger{
   background-color:var(--navbar-color);
@@ -57,6 +47,108 @@
   border-style:none;
 } */
 
+.heading,
+.home,
+.shopping,
+.about,
+.contact {
+	height: 100vh;
+}
+
+.header,
+.home,
+.about,
+.portfolio,
+.contact,
+.footer {
+	position: relative;
+}
+
+.header h1,
+.home h1,
+.about h1,
+.portfolio h1,
+.contact h1,
+.footer h1 {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.header h1::before,
+.home h1::before,
+.about h1::before,
+.portfolio h1::before,
+.contact h1::before,
+.footer h1::before {
+	content: '#';
+}
+
+.header h1,
+.footer h1 {
+	color: var(--shades);
+}
+
+.footer {
+	height: 50vh;
+	background-color: var(--primary);
+}
+
+.header {
+	background-color: var(--primary);
+}
+
+.navbar {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	background-color: var(--primary);
+	-webkit-box-shadow: 0 14px 14px -14px rgba(0, 0, 0, .75);
+	-moz-box-shadow: 0 14px 14px -14px rgba(0, 0, 0, .75);
+	box-shadow: 0 14px 14px -14px rgba(0, 0, 0, .75);
+}
+
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+.hidden {
+	display: none;
+}
+
+.display__logo {
+	font-size: 2.5rem;
+	margin-bottom: .5rem;
+	font-family: inherit;
+	font-weight: 500;
+	line-height: 1.2;
+	color: inherit;
+}
+
+.brand {
+	margin: 0;
+	font-size: 1.45em;
+}
+
+.brand a {
+	padding: 10px 15px;
+	text-align: center;
+	display: block;
+}
+
+.logo {
+	display: inline-block;
+	padding-top: .3125rem;
+	padding-bottom: .3125rem;
+	margin-right: 1rem;
+	line-height: inherit;
+}
+
+
 /* ========----[[Navbar Items]]----======== */
 nav a:hover{
   color:var(--accent-color);
@@ -64,24 +156,21 @@ nav a:hover{
 }
 
 /* ========----[[Navbar Menu]]----======== */
-nav ul{
-  
-}
 
 /*-------------------------------------------*\
                      Home
 \*-------------------------------------------*/
 
 /* ========----[[Home Container]]----======== */
-.home{
+/* .home{
   display:flex;
   justify-content:center;
   align-items:center;
   width:100vw;
-}
+} */
 
 /* ========----[[Main text]]----======== */
-.text{
+/* .text{
   margin-top:-1.5rem;
 }
 .text h2{
@@ -89,14 +178,14 @@ nav ul{
 }
 .text p{
   margin-top:-2rem;
-}
+} */
 
 /* ========----[[Main Image]]----======== */
-.image img{
+/* .image img{
   width:min(70vw,20rem);
   height:auto;
   border-radius:1rem;
-}
+} */
 
 /*-------------------------------------------*\
                      Shop
@@ -218,3 +307,35 @@ footer {
 }
 
 
+
+@media (min-width: 800px) {
+
+	.navbar,
+	.nav__items {
+		display: flex;
+	}
+
+	.navbar {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.navbar {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+
+@media screen and (max-width: 799px) {
+	.nav {
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		z-index: -1;
+		background-color: var(--accent-color);
+		opacity: 0;
+		transition: all 0.2s ease;
+	}
+}
