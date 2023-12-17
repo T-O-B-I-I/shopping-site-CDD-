@@ -1,65 +1,9 @@
 /*-------------------------------------------*\
-              Universal Selectors
+                   Imports
 \*-------------------------------------------*/
+@import "/index.css";
 
-* *::after *::before{
-  margin: 0;
-  padding: 0;
-  scroll-behavior:smooth; /* This adds smooth scrolling */
-  box-sizing:border-box; /* No interference in size */
-}
 
-/*-------------------------------------------*\
-                Css Variables
-\*-------------------------------------------*/
-
-:root{
-/* ====--[Colour Variables]--==== */
-  --bg-color: #E3E6E6;
-  --text-color: #fff;
-  --accent-color:#FEBD69;
-  --navbar-color:#232F3E;
-
-/* ====--[Font Variables]--==== */
-  --big-font: min(3rem,12vw);
-  --h2-font: min(2.5rem,4vh);
-  --nav-font:2vh;
-  --p-font: min(1.5rem,2vh);
-  --font: 'Poppins', sans-serif;
-
-/* ====--[Heading Bar Variables]--==== */
-  --bar-height:min(7rem,7vh);
-  --border-radius:min(3vh,1rem);
-}
-
-/* ========----[[Element Selectors]]----======== */
-body{
-  background-color:var(--bg-color);
-  font-family: var(--font);
-  overflow-x:hidden;
-}
-h1{
-  font-size:var(--big-font);
-}
-h2{
-  font-size:var(--h2-font);
-}
-p{
-  font-size: var(--p-font);
-}
-nav{
-  width:auto;
-}
-a{
-  text-decoration:none;
-  color:var(--text-color);
-}
-ul{
-  list-style:none;
-}
-header{
-  height:auto;
-}
 
 /*-------------------------------------------*\
                   Navigation
