@@ -71,7 +71,7 @@ nav a:hover{
   display:flex;
   justify-content:center;
   align-items:center;
-  width:100vw;
+  width:var(--bar-width);
 }
 
 /* ========----[[Main text]]----======== */
@@ -82,7 +82,7 @@ nav a:hover{
   margin-top:-2rem;
 }
 .text p{
-  margin-top:-2rem;
+  margin-top:-1rem;
 }
 
 /* ========----[[Main Image]]----======== */
