@@ -29,7 +29,7 @@
   
 /* ====--[Heading Bar Variables]--==== */
     --bar-height:min(7rem,7vh);
-    --bar-width:100vw;
+    --bar-width:100%;
     --border-radius:min(3vh,1rem);
 
 /* ====--[Shoping Box Variables]--==== */
@@ -52,9 +52,6 @@
   p{
     font-size: var(--p-font);
   }
-  nav{
-    width:auto;
-  }
   a{
     text-decoration:none;
     color:var(--text-color);
@@ -62,7 +59,9 @@
   ul{
     list-style:none;
   }
-  header{
-    height:auto;
+  nav{
+    display:flex;
+    justify-content:center;
+    align-items:center;
   }
   
