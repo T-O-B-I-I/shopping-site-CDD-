@@ -1,15 +1,11 @@
-/*-------------------------------------------*\
-                   Imports
-\*-------------------------------------------*/
+/* Imports-*/
 @import "/index.css";
 
 
 
-/*-------------------------------------------*\
-                  Navigation
-\*-------------------------------------------*/
+/*-Navigation*/
 
-/* ========----[[Heading]]----======== */
+/* -[[Heading]]- */
 .heading{
   display:flex;
   justify-content:center;
@@ -36,8 +32,7 @@
   margin-top:0;
 } */
 
-/* ========----[[Navbar]]----======== */
-
+/* Navbar */
 .nav-menu{
   display:flex;
   justify-content:space-evenly;
@@ -57,16 +52,14 @@
   border-style:none;
 } */
 
-/* ========----[[Navbar Items]]----======== */
+/* Navbar Items */
 nav a:hover{
   color:var(--accent-color);
   transition: 0.3s ease-in-out;
 }
-/*-------------------------------------------*\
-                     Home
-\*-------------------------------------------*/
+/*Home*/
 
-/* ========----[[Home Container]]----======== */
+/* Home Container */
 .home{
   display:flex;
   justify-content:center;
@@ -74,7 +67,7 @@ nav a:hover{
   width:var(--bar-width);
 }
 
-/* ========----[[Main text]]----======== */
+/* Main text */
 .text{
   margin-top:-1.5rem;
 }
@@ -85,18 +78,16 @@ nav a:hover{
   margin-top:-1rem;
 }
 
-/* ========----[[Main Image]]----======== */
+/* Main Image */
 .image img{
   width:min(70vw,20rem);
   height:auto;
   border-radius:1rem;
 }
 
-/*-------------------------------------------*\
-                     Shop
-\*-------------------------------------------*/
+/*-Shop*/
 
-/* ========----[[Shop Container]]----======== */
+/*Shop Container*/
 .container{
   height:auto;
   text-align: center;
@@ -125,9 +116,7 @@ nav a:hover{
   color: green;
 }
 
-/*-------------------------------------------*\
-                    Search
-\*-------------------------------------------*/
+/*-Search-*/
 .search-container {
   text-align: center;
   margin-top: 100px;
@@ -155,9 +144,7 @@ nav a:hover{
   transition: 0.3s ease-in;
 }
 
-/*-------------------------------------------*\
-                    Contacts
-\*-------------------------------------------*/
+/* Contacts*/
 
 .contact-container {
   text-align:center;
