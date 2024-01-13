@@ -29,15 +29,22 @@
   
 /* ====--[Heading Bar Variables]--==== */
     --bar-height:min(7rem,7vh);
-    --bar-width:100vw;
+    --bar-width:100%;
     --border-radius:min(3vh,1rem);
 
 /* ====--[Shoping Box Variables]--==== */
     --box-height:36vh;
     --color-box:rgba(255,255,255,2.3);
+
+/* ====--[Form variables]--==== */
+    --field-height:3vh;
+    --field-width:50%;
   }
   
-/* ========----[[Element Selectors]]----======== */
+/*-------------------------------------------*\
+              Universal Selectors
+\*-------------------------------------------*/
+  
   body{
     background-color:var(--bg-color);
     font-family: var(--font);
@@ -52,9 +59,6 @@
   p{
     font-size: var(--p-font);
   }
-  nav{
-    width:auto;
-  }
   a{
     text-decoration:none;
     color:var(--text-color);
@@ -62,7 +66,14 @@
   ul{
     list-style:none;
   }
-  header{
-    height:auto;
+  nav{
+    display:flex;
+    justify-content:center;
+    align-items:center;
   }
-  
+  label{
+    text-align:left;
+    font-size:var(--p-font);
+    display: block;
+    margin:1rem;
+  }
